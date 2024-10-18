@@ -19,9 +19,10 @@ function NotAvailablePage() {
 
   return (
     <div className="not-available-page">
-
       <div className="header">
-        <img src="../../media/deco_logo.png" alt="Company Logo" className="logo" />
+        <Link to="/">  {/* Переход на главную страницу */}
+          <img src="../../media/deco_logo.png" alt="Company Logo" className="logo" />
+        </Link>
       </div>
 
       {/* Основной контент */}

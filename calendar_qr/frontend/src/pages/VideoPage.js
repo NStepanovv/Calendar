@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './VideoPage.css';  // Подключение стилей
 
@@ -34,7 +34,9 @@ function VideoPage() {
   return (
     <div className="video-page">
       <div className="header">
-        <img src="../../media/deco_logo.png" alt="Company Logo" className="logo" />
+        <Link to="/">  {/* Переход на главную страницу */}
+          <img src="../../media/deco_logo.png" alt="Company Logo" className="logo" />
+        </Link>
       </div>
 
       <div className="video-container">
