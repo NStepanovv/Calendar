@@ -1,0 +1,77 @@
+/* Основной фон страницы */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #E6E6E6;  /* Серый фон */
+  overflow-x: hidden;  /* Убираем горизонтальный скролл */
+}
+
+.video-page {
+  background-color: #E6E6E6;  /* Серый фон */
+  height: 100vh;  /* Высота 100% экрана */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  width: 100vw; /* Ширина занимает 100% экрана */
+  box-sizing: border-box;
+}
+
+/* Логотип */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: 100px;  /* Размер логотипа */
+}
+
+/* Адаптивная рамка для видео */
+.video-container {
+  background-color: white;  /* Белый фон рамки */
+  border-radius: 20px;  /* Закругленные углы */
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Тень для рамки */
+  text-align: center;
+  width: 90vw;  /* Ширина в процентах от экрана (адаптивная) */
+  max-width: 800px;  /* Максимальная ширина на больших экранах */
+  height: auto;  /* Высота будет подстраиваться */
+  box-sizing: border-box;
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;  /* Ограничивает выход контента за рамки */
+}
+
+/* Стили для видео */
+video {
+  width: 90%;  /* Видео занимает всю ширину рамки */
+  height: auto;  /* Высота видео сохраняет пропорции */
+  border-radius: 10px;  /* Закругленные углы для видео */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Тень для видео */
+  object-fit: contain;  /* Видео заполняет контейнер без искажений */
+}
+
+/* Адаптивная рамка для описания видео */
+.description-container {
+  background-color: white;  /* Белый фон */
+  border-radius: 20px;  /* Закругленные углы */
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Тень для рамки */
+  text-align: center;
+  width: 90vw;  /* Адаптивная ширина 90% от экрана */
+  max-width: 800px;  /* Максимальная ширина */
+  box-sizing: border-box;
+  margin-top: 20px;  /* Отступ между видео и описанием */
+}
+
+/* Стили для текста описания */
+.video-description {
+  font-size: 18px;
+  color: #555;  /* Цвет текста */
+}

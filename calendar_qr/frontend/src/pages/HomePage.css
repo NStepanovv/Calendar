@@ -1,0 +1,56 @@
+/* Основной фон страницы */
+.home-page {
+    background-color: #E6E6E6;  /* Серый фон */
+    height: 100vh;  /* Высота 100% экрана */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;  /* Отступы для мобильных */
+  }
+  
+  /* Шапка с логотипом */
+  .header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    width: 100px;  /* Размер логотипа */
+  }
+  
+  /* Центральная рамка с текстом и изображением */
+  .content-box {
+    background-color: white;  /* Белый фон рамки */
+    border-radius: 20px;  /* Закругленные углы */
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  /* Тень для рамки */
+    text-align: center;
+    max-width: 600px;
+    width: 100%;  /* Адаптивная ширина */
+    box-sizing: border-box;  /* Учитываем padding в ширине */
+    margin-top: 100px;  /* Отступ сверху, чтобы рамка не наезжала на логотип */
+  }
+  
+  /* Стили для текста */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;  /* Темный текст */
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;  /* Светлый текст */
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для изображения внутри рамки с фиксированным размером */
+  .description-image {
+    width: 300px;  /* Фиксированная ширина */
+    height: 200px;  /* Фиксированная высота */
+    border-radius: 10px;
+    object-fit: contain;  /* Сохраняем пропорции изображения и обрезаем при необходимости */
+  }
